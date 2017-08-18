@@ -1,0 +1,1661 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+	<!-- LOADER -->
+	<div id="site-loader" class="load-complete">
+		<div class="load-position">
+			<div class="logo"><img src="{{ asset('assets/images/logo.png')}}" alt="logo"/></div>
+			<h6>Please wait, loading...</h6>
+			<div class="loading">
+				<div class="loading-line"></div>
+				<div class="loading-break loading-dot-1"></div>
+				<div class="loading-break loading-dot-2"></div>
+				<div class="loading-break loading-dot-3"></div>
+			</div>
+		</div>
+	</div><!-- Loader /- -->
+	
+	<a id="top"></a>
+	
+	<!-- Header Section -->
+	<header id="header" class="header">
+		
+		<!-- logo-add-block -->
+		<div class="logo-add-block">
+			<!-- container -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 logo-block col-sm-3">
+						<a href="index.html"><img src="{{ asset('assets/images/logo.png')}}" alt="logo"></a>
+					</div>
+					<div class="col-md-9 add-block col-sm-9">
+						<a href="#"><img src="{{ asset('assets/images/adds-2.png')}}" alt="adds" /></a>
+					</div>
+				</div>
+			</div><!-- container /- -->
+		</div><!-- logo-add-block /- -->
+		
+		<!-- menu-block -->
+		<div class="menu-block">
+			<!-- container -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 search-follow ow-right-padding">
+						<a href="#" class="follow"><i class="fa fa-plus"></i> Follow</a>
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+								<button class="sb-search-submit"><i class="fa fa-search"></i></button>
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<nav class="navbar navbar-default">						
+							<div class="navbar-header">
+								<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a href="index.html"><img src="{{ asset('assets/images/responsive-logo.png') }}" alt="logo" /></a>
+							</div>
+							<div class="navbar-collapse collapse" id="navbar">
+								<ul class="nav navbar-nav">
+									<li class="dropdown active">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-home"></i></a>
+										<ul class="dropdown-menu" role="menu">											
+											<li><a href="index.html">Home 1</a></li>
+											<li><a href="index-2.html">Home 2</a></li>
+											<li><a href="index-3.html">Home 3</a></li>
+										</ul>
+									</li>							
+									<li class="dropdown mega-dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mega Menu</a>
+										<ul class="dropdown-menu mega-dropdown-menu">
+											<li class="col-sm-4">
+												<ul>
+													<li><a href="#">Beauty</a></li>
+													<li><a href="#">Cream</a></li>
+													<li><a href="#">Fitness</a></li>
+													<li><a href="#">Love</a></li>
+													<li><a href="#">Skin Care</a></li>
+													<li><a href="#">Spa</a></li>
+													<li><a href="#">Others</a></li>
+												</ul>
+											</li>
+											<li class="col-sm-4">
+												<a href="#" class="entry-cover"><img src="{{ asset('assets/images/mega-menu/megamenu-post.jpg') }}" alt="mega menu" /></a>
+												<a href="#" class="entry-title">beautiful day in this neighborhood a beauty day for a neighbor</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 5 Hours ago</p>
+											</li>
+											<li class="col-sm-4">
+												<aside class="widget widget_latest_post">
+													<ul class="post">
+														<li>
+															<div class="col-md-3 col-sm-2 col-xs-2">
+																<a href="#"><img src="{{ asset('assets/images/mega-menu/mega-menu-post-1.jpg') }}" alt="popular-post" /></a>
+															</div>
+															<div class="col-md-9 col-sm-10 col-xs-10">
+																<a href="#" class="post-title">Can you tell me how to get how to get to Sesame Street.</a>
+																<p class="time"><i class="fa fa-clock-o"></i> 1 Day ago</p>
+															</div>
+														</li>
+														<li>
+															<div class="col-md-3 col-sm-2 col-xs-2">
+																<a href="#"><img src="{{ asset('assets/images/mega-menu/mega-menu-post-1.jpg') }}" alt="popular-post" /></a>
+															</div>
+															<div class="col-md-9 col-sm-10 col-xs-10">
+																<a href="#" class="post-title">young loner on a crusade to cham pion the cause of the innocent</a>
+																<p class="time"><i class="fa fa-clock-o"></i> 1 Day ago</p>
+															</div>
+														</li>
+														<li>
+															<div class="col-md-3 col-sm-2 col-xs-2">
+																<a href="#"><img src="{{ asset('assets/images/mega-menu/mega-menu-post-1.jpg') }}" alt="popular-post" /></a>
+															</div>
+															<div class="col-md-9 col-sm-10 col-xs-10">
+																<a href="#" class="post-title">Just two good ol' boys Never meanin' no harm</a>
+																<p class="time"><i class="fa fa-clock-o"></i> 1 Day ago</p>
+															</div>
+														</li>
+													</ul>
+												</aside>
+											</li>
+										</ul>
+									</li>
+									
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+										<ul class="dropdown-menu" role="menu">
+											<li class="dropdown">
+												<a href="blog-1.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">Blog 1 <i class="fa fa-angle-right"></i></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="single-post.html">Single Post</a></li>
+												</ul>
+											</li>
+											<li class="dropdown">
+												<a href="blog-2.html" class="dropdown-toggle disabled" data-toggle="dropdown" aria-expanded="false">Blog 2 <i class="fa fa-angle-right"></i></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="single-post.html">Single Post</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages</a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="author.html">Author</a></li>
+											<li><a href="error-404.html">404</a></li>
+										</ul>
+									</li>
+									<li><a href="about-us.html">About</a></li>																	
+									<li><a href="contact-us.html">Contact</a></li>								
+								</ul>
+							</div><!-- .nav-collapse /- -->
+						</nav> <!-- nav /- -->
+					</div>
+				</div>
+			</div><!-- container /- -->
+		</div><!-- menu-block /- -->
+	</header>
+	<!-- Header Section /- -->
+	
+	<!-- Latest Updates -->
+	<div class="container">
+		<div class="latest-update col-md-2 no-padding">
+			<h3>Latest Updates</h3>
+		</div>
+		<div class="col-md-10 latest-post-list no-padding">
+			<div data-speed="20000" data-direction="left" class='marquee'>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+			</div>
+		</div>
+	</div>
+	<!-- Latest Updates /- -->
+	
+	<!-- Slider Section -->
+	<div id="slider-section" class="slider-section">
+	
+		<!-- slider1-container -->
+		<div id="slider1_container" class="slider1-container">
+			<div data-u="slides" class="slides-new">
+				<div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 slider-box-left">
+								<div class="full-box-inner">
+									<div class="image-box">
+										<img src="{{ asset('assets/images/home/home1/slider/slider-box-1.jpg') }}" alt="slider 1" />
+										<a href="#" class="add-sign-big color-violate"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+									</div>
+									<ul class="comments-social">
+										<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+										<li class="dropdown">
+											<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Facebook</a></li>
+												<li><a href="#">Twitter</a></li>
+												<li><a href="#">Google</a></li>
+												<li><a href="#">Linkedin</a></li>
+											</ul>
+										</li>
+									</ul>
+									<div class="box-content">
+										<a href="#" class="block-title">Love life's sweetest reward Let it flow it floats back to you</a>
+										<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 slider-box-right">
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slide 2" />
+											<a href="#" class="add-sign-small color-purpal"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">Never heard the word impossible</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-3.jpg') }}" alt="slider box 3" />
+											<a href="#" class="add-sign-small color-dark-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">I never thought I could feel so free</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-4.jpg') }}" alt="slider box" />
+											<a href="#" class="add-sign-small color-orange"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">place you ought to be So they loaded up</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slider-box 3" />
+											<a href="#" class="add-sign-small color-yellow-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">The first mate and his Skipper too will</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- item /- -->
+				
+				<div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 slider-box-left">
+								<div class="full-box-inner">
+									<div class="image-box">
+										<img src="{{ asset('assets/images/home/home1/slider/slider-box-1.jpg') }}" alt="slider 1" />
+										<a href="#" class="add-sign-big color-violate"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+									</div>
+									<ul class="comments-social">
+										<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+										<li class="dropdown">
+											<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Facebook</a></li>
+												<li><a href="#">Twitter</a></li>
+												<li><a href="#">Google</a></li>
+												<li><a href="#">Linkedin</a></li>
+											</ul>
+										</li>
+									</ul>
+									<div class="box-content">
+										<a href="#" class="block-title">Love life's sweetest reward Let it flow it floats back to you</a>
+										<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 slider-box-right">
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slide 2" />
+											<a href="#" class="add-sign-small color-purpal"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">Never heard the word impossible</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-3.jpg') }}" alt="slider box 3" />
+											<a href="#" class="add-sign-small color-dark-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">I never thought I could feel so free</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-4.jpg') }}" alt="slider box" />
+											<a href="#" class="add-sign-small color-orange"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">place you ought to be So they loaded up</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slider-box 3" />
+											<a href="#" class="add-sign-small color-yellow-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">The first mate and his Skipper too will</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- item 2 /- -->
+				
+				<div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 slider-box-left">
+								<div class="full-box-inner">
+									<div class="image-box">
+										<img src="{{ asset('assets/images/home/home1/slider/slider-box-1.jpg') }}" alt="slider 1" />
+										<a href="#" class="add-sign-big color-violate"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+									</div>
+									<ul class="comments-social">
+										<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+										<li class="dropdown">
+											<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Facebook</a></li>
+												<li><a href="#">Twitter</a></li>
+												<li><a href="#">Google</a></li>
+												<li><a href="#">Linkedin</a></li>
+											</ul>
+										</li>
+									</ul>
+									<div class="box-content">
+										<a href="#" class="block-title">Love life's sweetest reward Let it flow it floats back to you</a>
+										<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 slider-box-right">
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slide 2" />
+											<a href="#" class="add-sign-small color-purpal"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">Never heard the word impossible</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-3.jpg') }}" alt="slider box 3" />
+											<a href="#" class="add-sign-small color-dark-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">I never thought I could feel so free</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-4.jpg') }}" alt="slider box" />
+											<a href="#" class="add-sign-small color-orange"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">place you ought to be So they loaded up</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="post-box">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slider-box 3" />
+											<a href="#" class="add-sign-small color-yellow-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="post-box-inner">
+											<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+											<div class="box-content">
+												<a href="#" class="block-title">The first mate and his Skipper too will</a>
+												<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+												<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+												<a href="#"><i class="fa fa-heart"></i> 8</a>
+												<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- item 3 /- -->            
+			</div>
+			<!-- Arrow Left -->
+			<span data-u="arrowleft" class="jssora13l">
+				<i class="fa fa-angle-left"></i>
+			</span>
+			<!-- Arrow Right -->
+			<span data-u="arrowright" class="jssora13r">
+				<i class="fa fa-angle-right"></i>
+			</span>
+		</div><!-- slider-container1 /- -->
+
+		<!-- carousel -->
+		<div id="carousal-slider" class="carousal-slider1">		
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 slider-box-left">
+									<div class="full-box-inner">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-1.jpg') }}" alt="slider 1" />
+											<a href="#" class="add-sign-big color-violate"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="box-content">
+											<a href="#" class="block-title">Love life's sweetest reward Let it flow it floats back to you</a>
+											<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 slider-box-right">
+									<div class="col-md-6 col-sm-6">
+										<div class="post-box">
+											<div class="image-box">
+												<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slide 2" />
+												<a href="#" class="add-sign-small color-purpal"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+											</div>
+											<ul class="comments-social">
+												<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+												<li class="dropdown">
+													<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="#">Facebook</a></li>
+														<li><a href="#">Twitter</a></li>
+														<li><a href="#">Google</a></li>
+														<li><a href="#">Linkedin</a></li>
+													</ul>
+												</li>
+											</ul>
+											<div class="post-box-inner">
+												<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+												<div class="box-content">
+													<a href="#" class="block-title">Never heard the word impossible</a>
+													<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+													<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+													<a href="#"><i class="fa fa-heart"></i> 8</a>
+													<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="post-box">
+											<div class="image-box">
+												<img src="{{ asset('assets/images/home/home1/slider/slider-box-3.jpg') }}" alt="slider box 3" />
+												<a href="#" class="add-sign-small color-dark-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+											</div>
+											<ul class="comments-social">
+												<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+												<li class="dropdown">
+													<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="#">Facebook</a></li>
+														<li><a href="#">Twitter</a></li>
+														<li><a href="#">Google</a></li>
+														<li><a href="#">Linkedin</a></li>
+													</ul>
+												</li>
+											</ul>
+											
+											<div class="post-box-inner">
+												<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+												<div class="box-content">
+													<a href="#" class="block-title">I never thought I could feel so free</a>
+													<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+													<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+													<a href="#"><i class="fa fa-heart"></i> 8</a>
+													<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="post-box">
+											<div class="image-box">
+												<img src="{{ asset('assets/images/home/home1/slider/slider-box-4.jpg') }}" alt="slider box" />
+												<a href="#" class="add-sign-small color-orange"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+											</div>
+											<ul class="comments-social">
+												<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+												<li class="dropdown">
+													<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="#">Facebook</a></li>
+														<li><a href="#">Twitter</a></li>
+														<li><a href="#">Google</a></li>
+														<li><a href="#">Linkedin</a></li>
+													</ul>
+												</li>
+											</ul>
+											<div class="post-box-inner">
+												<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+												<div class="box-content">
+													<a href="#" class="block-title">place you ought to be So they loaded up</a>
+													<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+													<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+													<a href="#"><i class="fa fa-heart"></i> 8</a>
+													<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="post-box">
+											<div class="image-box">
+												<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slider-box 3" />
+												<a href="#" class="add-sign-small color-yellow-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+											</div>
+											<ul class="comments-social">
+												<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+												<li class="dropdown">
+													<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="#">Facebook</a></li>
+														<li><a href="#">Twitter</a></li>
+														<li><a href="#">Google</a></li>
+														<li><a href="#">Linkedin</a></li>
+													</ul>
+												</li>
+											</ul>
+											<div class="post-box-inner">
+												<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+												<div class="box-content">
+													<a href="#" class="block-title">The first mate and his Skipper too will</a>
+													<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+													<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+													<a href="#"><i class="fa fa-heart"></i> 8</a>
+													<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+					
+					<div class="item">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 slider-box-left">
+									<div class="full-box-inner">
+										<div class="image-box">
+											<img src="{{ asset('assets/images/home/home1/slider/slider-box-1.jpg') }}" alt="slider box 1" />
+											<a href="#" class="add-sign-big color-violate"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+										</div>
+										<ul class="comments-social">
+											<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+											<li class="dropdown">
+												<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Facebook</a></li>
+													<li><a href="#">Twitter</a></li>
+													<li><a href="#">Google</a></li>
+													<li><a href="#">Linkedin</a></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="box-content">
+											<a href="#" class="block-title">Love life's sweetest reward Let it flow it floats back to you</a>
+											<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 slider-box-right">
+									<div class="col-md-6 col-sm-6">
+										<div class="post-box">
+											<div class="image-box">
+												<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slider box 2" />
+												<a href="#" class="add-sign-small color-purpal"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+											</div>
+											<ul class="comments-social">
+												<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+												<li class="dropdown">
+													<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="#">Facebook</a></li>
+														<li><a href="#">Twitter</a></li>
+														<li><a href="#">Google</a></li>
+														<li><a href="#">Linkedin</a></li>
+													</ul>
+												</li>
+											</ul>
+											<div class="post-box-inner">
+												<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+												<div class="box-content">
+													<a href="#" class="block-title">Never heard the word impossible</a>
+													<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+													<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+													<a href="#"><i class="fa fa-heart"></i> 8</a>
+													<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="post-box">
+											<div class="image-box">
+												<img src="{{ asset('assets/images/home/home1/slider/slider-box-3.jpg') }}" alt="slider box 3" />
+												<a href="#" class="add-sign-small color-dark-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+											</div>
+											<ul class="comments-social">
+												<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+												<li class="dropdown">
+													<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="#">Facebook</a></li>
+														<li><a href="#">Twitter</a></li>
+														<li><a href="#">Google</a></li>
+														<li><a href="#">Linkedin</a></li>
+													</ul>
+												</li>
+											</ul>
+											
+											<div class="post-box-inner">
+												<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+												<div class="box-content">
+													<a href="#" class="block-title">I never thought I could feel so free</a>
+													<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+													<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+													<a href="#"><i class="fa fa-heart"></i> 8</a>
+													<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="post-box">
+											<div class="image-box">
+												<img src="{{ asset('assets/images/home/home1/slider/slider-box-4.jpg') }}" alt="slider box 4" />
+												<a href="#" class="add-sign-small color-orange"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+											</div>
+											<ul class="comments-social">
+												<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+												<li class="dropdown">
+													<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="#">Facebook</a></li>
+														<li><a href="#">Twitter</a></li>
+														<li><a href="#">Google</a></li>
+														<li><a href="#">Linkedin</a></li>
+													</ul>
+												</li>
+											</ul>
+											<div class="post-box-inner">
+												<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+												<div class="box-content">
+													<a href="#" class="block-title">place you ought to be So they loaded up</a>
+													<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+													<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+													<a href="#"><i class="fa fa-heart"></i> 8</a>
+													<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="post-box">
+											<div class="image-box">
+												<img src="{{ asset('assets/images/home/home1/slider/slider-box-2.jpg') }}" alt="slider box 2" />
+												<a href="#" class="add-sign-small color-yellow-green"><img src="{{ asset('assets/images/icon/small-plus.png') }}" alt="big-plus" /></a>
+											</div>
+											<ul class="comments-social">
+												<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+												<li class="dropdown">
+													<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="#">Facebook</a></li>
+														<li><a href="#">Twitter</a></li>
+														<li><a href="#">Google</a></li>
+														<li><a href="#">Linkedin</a></li>
+													</ul>
+												</li>
+											</ul>
+											<div class="post-box-inner">
+												<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+												<div class="box-content">
+													<a href="#" class="block-title">The first mate and his Skipper too will</a>
+													<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+													<p>Hills that is. Swimmin' pools movie stars. Just two good ol' boys Wouldn't change if they could. </p>
+													<a href="#"><i class="fa fa-heart"></i> 8</a>
+													<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+					<span class="fa fa-angle-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+					<span class="fa fa-angle-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>	
+		</div>
+	</div><!-- Slider Section /- -->
+	
+	<!-- Adds -->
+	<div class="add-show">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12"><a href="#"><img src="{{ asset('assets/images/adds-2.png') }}" alt="adds" /></a></div>
+			</div>
+		</div>
+	</div><!-- Adds /- -->
+	
+	<!-- Post --> 
+	<div id="category-post-section" class="category-post-section">
+		<!-- Container -->
+		<div class="container">
+			<div class="row">
+				<!-- col-md-4 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="post-box">
+						<div class="image-box">
+							<img src="{{ asset('assets/images/home/home1/post/post-1.jpg') }}" alt="post-1" />
+							<a href="#" class="add-sign-big color-orange"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+						</div>
+						<ul class="comments-social">
+							<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+							<li class="dropdown">
+								<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google</a></li>
+									<li><a href="#">Linkedin</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="post-box-inner">
+							<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+							<div class="box-content">
+								<span>Fashion</span>
+								<a href="#" class="block-title">Skipper too will do their very best to make the others</a>
+								<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+								<p>Well we're movin' on up to the east side to a deluxe apartment in the sky. The movie star the professor and Mary Ann here on Gilligans Isle.</p>
+								<a href="#"><i class="fa fa-heart"></i> 8</a>
+								<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col-md-4 /- -->
+				
+				<!-- col-md-4 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="post-box">
+						<div class="image-box">
+							<img src="{{ asset('assets/images/home/home1/post/post-5.jpg') }}" alt="post-5" />
+							<a href="#" class="add-sign-big color-yellow-green"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+						</div>
+						<ul class="comments-social">
+							<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+							<li class="dropdown">
+								<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google</a></li>
+									<li><a href="#">Linkedin</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="post-box-inner">
+							<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+							<div class="box-content">
+								<span>Entertainment</span>
+								<a href="#" class="block-title">Love Boat soon will be making another run The Love </a>
+								<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+								<p>Well we're movin' on up to the east side to a deluxe apartment in the sky. The movie star the professor and Mary Ann here on 
+								Gilligans Isle.</p>
+								<a href="#"><i class="fa fa-heart"></i> 8</a>
+								<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col-md-4 /- -->
+				
+				<!-- col-md-4 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="post-box">
+						<div class="image-box">
+							<img src="{{ asset('assets/images/home/home1/post/post-3.jpg') }}" alt="post-3" />
+							<a href="#" class="add-sign-big color-green"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+						</div>
+						<ul class="comments-social">
+							<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+							<li class="dropdown">
+								<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google</a></li>
+									<li><a href="#">Linkedin</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="post-box-inner">
+							<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+							<div class="box-content">
+								<span>Travel</span>
+								<a href="#" class="block-title">along come two they got on nothin' but their </a>
+								<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+								<p>Well we're movin' on up to the east side to a deluxe apartment in the sky. The movie star the professor and Mary Ann here on 
+								Gilligans Isle.</p>
+								<a href="#"><i class="fa fa-heart"></i> 8</a>
+								<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col-md-4 /- -->
+				
+				<!-- col-md-4 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="post-box">
+						<div class="image-box">
+							<img src="{{ asset('assets/images/home/home1/post/post-4.jpg') }}" alt="post-4" />
+							<a href="#" class="add-sign-big color-navy-blue"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+						</div>
+						<ul class="comments-social">
+							<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+							<li class="dropdown">
+								<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google</a></li>
+									<li><a href="#">Linkedin</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="post-box-inner">
+							<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+							<div class="box-content">
+								<span>Entertainment</span>
+								<a href="#" class="block-title">orbit which freezes his life support systems</a>
+								<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+								<p>Well we're movin' on up to the east side to a deluxe apartment in the sky. The movie star the professor and Mary Ann here on 
+								Gilligans Isle.</p>
+								<a href="#"><i class="fa fa-heart"></i> 8</a>
+								<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col-md-4 /- -->
+				
+				<!-- col-md-4 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="post-box">
+						<div class="image-box">
+							<img src="{{ asset('assets/images/home/home1/post/post-5.jpg') }}" alt="post-5" />
+							<a href="#" class="add-sign-big color-yellow-green"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+						</div>
+						<ul class="comments-social">
+							<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+							<li class="dropdown">
+								<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google</a></li>
+									<li><a href="#">Linkedin</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="post-box-inner">
+							<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+							<div class="box-content">
+								<span>Fashion</span>
+								<a href="#" class="block-title">leads a rag-tag fugitive fleet on a lonely quest</a>
+								<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+								<p>Well we're movin' on up to the east side to a deluxe apartment in the sky. The movie star the professor and Mary Ann here on 
+								Gilligans Isle.</p>
+								<a href="#"><i class="fa fa-heart"></i> 8</a>
+								<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col-md-4 /- -->
+				
+				<!-- col-md-4 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="post-box">
+						<div class="image-box">
+							<img src="{{ asset('assets/images/home/home1/post/post-6.jpg') }}" alt="post-6" />
+							<a href="#" class="add-sign-big color-blue"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+						</div>
+						<ul class="comments-social">
+							<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+							<li class="dropdown">
+								<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Google</a></li>
+									<li><a href="#">Linkedin</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="post-box-inner">
+							<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+							<div class="box-content">
+								<span>Travel</span>
+								<a href="#" class="block-title">We've a loveable space that needs everyone</a>
+								<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+								<p>Well we're movin' on up to the east side to a deluxe apartment in the sky. The movie star the professor and Mary Ann here on 
+								Gilligans Isle.</p>
+								<a href="#"><i class="fa fa-heart"></i> 8</a>
+								<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- col-md-4 /- -->
+			</div>
+		</div><!-- Container /- -->
+	</div><!-- Post Section /- -->
+	
+	
+	
+	<!-- Latest Artical -->
+	<div id="latest-articles" class="latest-articles">
+		<!-- Section Header -->
+		<div class="section-header">
+			<h2>latest articles</h2>
+		</div>
+		<!-- Section Header /- -->
+		
+		<!-- Container -->
+		<div class="container">
+			<div class="row">
+				<!-- col-md-8 -->
+				<div class="col-md-8 col-sm-6">
+					<div class="row">
+					<!-- col-md-6 -->
+					<div class="col-md-6">
+						<div class="post-box">
+							<div class="image-box">
+								<img src="{{ asset('assets/images/home/home1/latest-articles/latest-articles-1.jpg') }}" alt="post-6" />
+								<a href="#" class="add-sign-big color-pink"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+							</div>
+							<ul class="comments-social">
+								<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+								<li class="dropdown">
+									<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Facebook</a></li>
+										<li><a href="#">Twitter</a></li>
+										<li><a href="#">Google</a></li>
+										<li><a href="#">Linkedin</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="post-box-inner">
+								<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+								<div class="box-content">
+									<span>Fun</span>
+									<a href="#" class="block-title">Now the world don't move to the beat of just one drum</a>
+									<p class="time"><i class="fa fa-clock-o"></i> 1 Hour ago</p>
+									<p>So lets make the most of this beautiful day. Since we're together. Come and dance on our floor. Take a step that is new. We've a loveable space that company too.</p>
+									<a href="#"><i class="fa fa-heart"></i> 8</a>
+									<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- col-md-6 /- -->
+					
+				
+					
+					<!-- col-md-6 -->
+					<div class="col-md-6">
+						<div class="post-box">
+							<div class="image-box">
+								<img src="{{ asset('assets/images/home/home1/latest-articles/latest-articles-7.jpg') }}" alt="post-6" />
+								<a href="#" class="add-sign-big color-yellow-green"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+							</div>
+							<ul class="comments-social">
+								<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+								<li class="dropdown">
+									<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Facebook</a></li>
+										<li><a href="#">Twitter</a></li>
+										<li><a href="#">Google</a></li>
+										<li><a href="#">Linkedin</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="post-box-inner">
+								<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+								<div class="box-content">
+									<span>Travel</span>
+									<a href="#" class="block-title">Till the one day when the lady met this fellow and it was</a>
+									<p class="time"><i class="fa fa-clock-o"></i> 6 Hour ago</p>
+									<p>So lets make the most of this beautiful day. Since we're together. Come and dance on our floor. Take a step that is new. We've a loveable space that company too.</p>
+									<a href="#"><i class="fa fa-heart"></i> 8</a>
+									<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- col-md-6 /- -->
+					
+					<!-- col-md-6 -->
+					<div class="col-md-6">
+						<div class="post-box">
+							<div class="image-box">
+								<img src="{{ asset('assets/images/home/home1/latest-articles/latest-articles-8.jpg') }}" alt="post-6" />
+								<a href="#" class="add-sign-big color-blue"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+							</div>
+							<ul class="comments-social">
+								<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+								<li class="dropdown">
+									<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Facebook</a></li>
+										<li><a href="#">Twitter</a></li>
+										<li><a href="#">Google</a></li>
+										<li><a href="#">Linkedin</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="post-box-inner">
+								<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+								<div class="box-content">
+									<span>Travel</span>
+									<a href="#" class="block-title">Well we're movin' on up to the east side</a>
+									<p class="time"><i class="fa fa-clock-o"></i> 6 Hour ago</p>
+									<p>So lets make the most of this beautiful day. Since we're together. Come and dance on our floor. Take a step that is new. We've a loveable space that company too.</p>
+									<a href="#"><i class="fa fa-heart"></i> 8</a>
+									<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- col-md-6 /- -->
+					
+					<!-- col-md-6 -->
+					<div class="col-md-6">
+						<div class="post-box">
+							<div class="image-box">
+								<img src="{{ asset('assets/images/home/home1/latest-articles/latest-articles-9.jpg') }}" alt="post-6" />
+								<a href="#" class="add-sign-big color-dark-green"><img src="{{ asset('assets/images/icon/big-plus.png') }}" alt="big-plus" /></a>
+							</div>
+							<ul class="comments-social">
+								<li><a href="#"><img src="{{ asset('assets/images/icon/like-icon.png') }}" alt="like" /></a></li>
+								<li class="dropdown">
+									<a href="#"><img src="{{ asset('assets/images/icon/more-icon.png') }}" alt="more-icon" /></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Facebook</a></li>
+										<li><a href="#">Twitter</a></li>
+										<li><a href="#">Google</a></li>
+										<li><a href="#">Linkedin</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="post-box-inner">
+								<a href="#" class="box-read-more"><img src="{{ asset('assets/images/icon/arrow.png') }}" alt="arrow" /> Read More</a>
+								<div class="box-content">
+									<span>Fashion</span>
+									<a href="#" class="block-title">It's time to raise the curtain on the Muppet Show</a>
+									<p class="time"><i class="fa fa-clock-o"></i> 7 Hour ago</p>
+									<p>So lets make the most of this beautiful day. Since we're together. Come and dance on our floor. Take a step that is new. We've a loveable space that company too.</p>
+									<a href="#"><i class="fa fa-heart"></i> 8</a>
+									<a href="#"><img src="{{ asset('assets/images/icon/comment-icon.png') }}" alt="comment" /> 13</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- col-md-6 /- -->
+					<nav>
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">Previous</span>
+								</a>
+							</li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">Next</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					</div>
+				</div><!-- col-md-8 /- -->
+			
+				<!-- col-md-4 -->
+				<div class="col-md-4 col-sm-6 widget-sidebar">
+					
+					<!-- Latest Post -->
+					<aside class="widget widget_latest_post">
+						<h3 class="widget-title">latest Post</h3>
+						<div class="widget-inner">
+							<ul class="post">
+								<li>
+									<div class="col-md-5 col-sm-5 col-xs-4">
+										<a href="#"><img src="{{ asset('assets/images/widget/widget-post-1.jpg') }}" alt="popular-post" /></a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-8">
+										<a href="#" class="post-title">where you can see our  of troubles are all </a>
+										<p>
+											<a href="#"><i class="fa fa-heart"></i> 33</a> 
+											<span><i class="fa fa-clock-o"></i> 1 Hour ago</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-5 col-sm-5 col-xs-4">
+										<a href="#"><img src="{{ asset('assets/images/widget/widget-post-2.jpg') }}" alt="popular-post" /></a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-8">
+										<a href="#" class="post-title">crew the Minnow would be lost the Minnow</a>
+										<p>
+											<a href="#"><i class="fa fa-heart"></i> 30</a> 
+											<span><i class="fa fa-clock-o"></i> 1 Hour ago</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-5 col-sm-5 col-xs-4">
+										<a href="#"><img src="{{ asset('assets/images/widget/widget-post-3.jpg') }}" alt="popular-post" /></a>
+									</div>
+									<div class="col-md-7 col-sm-7 col-xs-8">
+										<a href="#" class="post-title">Come and listen to a story about Jed</a>
+										<p>
+											<a href="#"><i class="fa fa-heart"></i> 25</a> 
+											<span><i class="fa fa-clock-o"></i> 1 Hour ago</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</aside><!-- Latest Post /- -->
+					
+					<!-- Latest Tweets -->
+					<aside class="widget widget_latest_tweets">
+						<h3 class="widget-title">latest Tweets</h3>
+						<div class="widget-inner">
+							<ul class="tweets">
+								<li>
+									<div class="col-md-1 col-sm-1 col-xs-1">
+										<i class="fa fa-twitter"></i>
+									</div>
+									<div class="col-md-11 col-sm-11 col-xs-11">
+										<a href="#" class="tweets-title">@Murphy zim</a>
+										<p>
+											To a deluxe apartment in the sky! Believe it or not I'm walking on air. I never <a href="#">http://Ranzim.designby Ranzim.com/ RanzimPersonalBlog</a><span>10 Min ago</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-1 col-sm-1 col-xs-1">
+										<i class="fa fa-twitter"></i>
+									</div>
+									<div class="col-md-11 col-sm-11 col-xs-11">
+										<a href="#" class="tweets-title">@Murphy zim</a>
+										<p>
+											To a deluxe apartment in the sky! Believe it or not I'm walking on air. I never <a href="#">http://Ranzim.designby Ranzim.com/ RanzimPersonalBlog</a><span>10 Min ago</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-1 col-sm-1 col-xs-1">
+										<i class="fa fa-twitter"></i>
+									</div>
+									<div class="col-md-11 col-sm-11 col-xs-11">
+										<a href="#" class="tweets-title">@Murphy zim</a>
+										<p>
+											To a deluxe apartment in the sky! Believe it or not I'm walking on air. I never <a href="#">http://Ranzim.designby Ranzim.com/ RanzimPersonalBlog</a><span>10 Min ago</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</aside><!-- Latest Tweets /- -->
+					
+					<!-- Flicker -->
+					<aside class="widget widget_Flicker">
+						<h3 class="widget-title">follow on flickr</h3>
+						<div class="widget-inner">
+							<div id="widget-flicker" class="owl-carousel owl-theme">
+								<div class="item">
+									<a href="#">
+										<img src="{{ asset('assets/images/widget/flicker-1.jpg') }}" alt="flicker" />
+										<span>celebrating 2015 new year</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="{{ asset('assets/images/widget/flicker-1.jpg') }}" alt="flicker" />
+										<span>celebrating 2015 new year</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="{{ asset('assets/images/widget/flicker-1.jpg') }}" alt="flicker" />
+										<span>celebrating 2015 new year</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</aside><!-- Flicker /- -->
+					
+					<!-- Comments -->
+					<aside class="widget widget_comments">
+						<h3 class="widget-title">recent comments</h3>
+						<div class="widget-inner">
+							<ul class="comment">
+								<li>
+									<div class="col-md-3 col-sm-3 col-xs-4">
+										<a href="#"><img src="{{ asset('assets/images/widget/comment-1.jpg') }}" alt="popular-post" /></a>
+									</div>
+									<div class="col-md-9 col-sm-9 col-xs-8">
+										<a href="#" class="comment-title">Chris evans <span>5 Min ago</span></a>
+										<p>Straight ahead and on the track now. We're gonna make our dreams come true.</p>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-3 col-sm-3 col-xs-4">
+										<a href="#"><img src="{{ asset('assets/images/widget/comment-2.png') }}" alt="popular-post" /></a>
+									</div>
+									<div class="col-md-9 col-sm-9 col-xs-8">
+										<a href="#" class="comment-title">lucy jesik <span>5 Min ago</span></a>
+										<p>Straight ahead and on the track now. We're gonna make our dreams come true.</p>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-3 col-sm-3 col-xs-4">
+										<a href="#"><img src="{{ asset('assets/images/widget/comment-3.png') }}" alt="popular-post" /></a>
+									</div>
+									<div class="col-md-9 col-sm-9 col-xs-8">
+										<a href="#" class="comment-title">andrew kim <span>5 Min ago</span></a>
+										<p>Straight ahead and on the track now. We're gonna make our dreams come true.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</aside><!-- Comments /- -->
+					
+				</div><!-- col-md-4 /- -->
+			</div>
+		</div><!-- container /- -->
+	</div><!-- Latest Artical /- -->
+	
+	<!-- Footer Section -->
+	<div id="footer-section" class="footer-section">
+		<!-- container -->
+		<div class="container">
+			<!-- col-md-4 -->
+			<div class="col-md-4">
+				<aside class="widget widget_about_us">
+					<h3 class="widget-title">About us</h3>
+					<p>The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the million aire and his wife. He's gainin' on you so you better look alive. He busy revin' up his Powerful Mach</p>
+				</aside>
+				<aside class="widget widget_social_icons">
+					<h3 class="widget-title">Stay in touch</h3>
+					<ul>
+						<li><a href="#" target="_blank" class="fb"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" target="_blank" class="tw"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" target="_blank" class="gp"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" target="_blank" class="lin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" target="_blank" class="dr"><i class="fa fa-dribbble"></i></a></li>						
+					</ul>
+				</aside>
+			</div><!-- col-md-4 /- -->
+			<!-- col-md-4 -->
+			<div class="col-md-4">
+				<aside class="widget widget_latest_post">
+					<h3 class="widget-title">Popular Post</h3>
+					<ul class="post">
+						<li>
+							<div class="col-md-3 col-sm-2 col-xs-2">
+								<a href="#"><img src="{{ asset('assets/images/footer/popular-post-1.png') }}" alt="popular-post" /></a>
+							</div>
+							<div class="col-md-9 col-sm-10 col-xs-10">
+								<a href="#" class="post-title">Political</a>
+								<p>Flatnin' the hills Someday the mountain might get ‘em but the law never</p>
+							</div>
+						</li>
+						<li>
+							<div class="col-md-3 col-sm-2 col-xs-2">
+								<a href="#"><img src="{{ asset('assets/images/footer/popular-post-2.png') }}" alt="popular-post" /></a>
+							</div>
+							<div class="col-md-9 col-sm-10 col-xs-10">
+								<a href="#" class="post-title">Entertainment</a>
+								<p>William Buck Rogers are blown out of their trajectory into an orbit</p>
+							</div>
+						</li>
+						<li>
+							<div class="col-md-3 col-sm-2 col-xs-2">
+								<a href="#"><img src="{{ asset('assets/images/footer/popular-post-3.png') }}" alt="popular-post" /></a>
+							</div>
+							<div class="col-md-9 col-sm-10 col-xs-10">
+								<a href="#" class="post-title">Fashion</a>
+								<p>And you know where you were then Girls were girls and men</p>
+							</div>
+						</li>
+					</ul>
+				</aside>
+			</div><!-- col-md-4 /- -->
+			
+			<!-- col-md-4 -->
+			<div class="col-md-4">
+				<aside class="widget widget_newsletter">
+					<h3 class="widget-title">newsletter signup</h3>
+					<p>Sign up to our newsletter and get exclusive deals you will not find anywhere else straight to your inbox!</p>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Enter Your E-mail">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button"><img src="{{ asset('assets/images/footer/email-newsletter-icon.png') }}" alt="email-newsletter-icon" /></button>
+						</span>
+					</div><!-- /input-group -->
+				</aside>
+			</div><!-- col-md-4 /- -->
+		</div><!-- container /- -->
+		<!-- Footer Bootom -->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="col-md-6 col-sm-6">
+					<p>&copy; 2015 RANZIM All Rights Reserved. </p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<nav class="navbar navbar-default">						
+						<div class="navbar-header">
+							<button aria-controls="navbar" aria-expanded="false" data-target="#footer-menu" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="navbar-collapse collapse" id="footer-menu">
+							<ul class="nav navbar-nav">
+								<li><a href="about-us.html">About</a></li>
+								<li><a href="#">Post Format</a></li>
+								<li><a href="#">Sitemap</a></li>
+								<li><a href="contact-us.html">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div><!-- Footer Bootom /- -->
+	</div>
+	<!-- Footer Section /- -->
+	
+	<!-- jQuery Include -->
+	<script src="{{ asset('assets/libraries/jquery.min.js') }}"></script>	
+	<script src="{{ asset('assets/libraries/jquery.easing.min.js') }}"></script><!-- Easing Animation Effect -->
+	<script src="{{ asset('assets/libraries/bootstrap/bootstrap.min.js') }}"></script> <!-- Core Bootstrap v3.2.0 -->
+	<script src="{{ asset('assets/libraries/jquery.animateNumber.min.js') }}"></script> <!-- Used for Animated Numbers -->
+	<script src="{{ asset('assets/libraries/jquery.appear.js') }}"></script> <!-- It Loads jQuery when element is appears -->
+	<script src="{{ asset('assets/libraries/jquery.knob.js') }}"></script> <!-- Used for Loading Circle -->
+	<script src="{{ asset('assets/libraries/wow.min.js') }}"></script> <!-- Use For Animation -->
+	<script src="{{ asset('assets/libraries/flexslider/jquery.flexslider-min.js') }}"></script> <!-- flexslider   -->
+	<script src="{{ asset('assets/libraries/owl-carousel/owl.carousel.min.js') }}"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+	<script src="{{ asset('assets/libraries/expanding-search/modernizr.custom.js') }}"></script> <!-- Core Owl Carousel CSS File  *	v1.3.3 -->
+	<script src="{{ asset('assets/libraries/expanding-search/classie.js') }}"></script> 
+	<script src="{{ asset('assets/libraries/expanding-search/uisearch.js') }}"></script>
+	<script>
+		new UISearch( document.getElementById( 'sb-search' ) );
+	</script>
+	<script type="text/javascript" src="{{ asset('assets/libraries/jssor.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/libraries/jssor.slider.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/libraries/jquery.marquee.js') }}"></script>
+	<!-- Customized Scripts -->
+	<script src="{{ asset('assets/js/functions.js') }}"></script>
+	
+{% endblock%}
