@@ -41,4 +41,8 @@ class AppBundle extends Bundle
     // you may need to add some initialization code in the boot() method.
     // Checkout the Symfony\Component\HttpKernel\Bundle\Bundle class to see all
     // the available methods for bundles.
+      public function getParent()
+        {
+            return 'FOSUserBundle';
+        }
 }

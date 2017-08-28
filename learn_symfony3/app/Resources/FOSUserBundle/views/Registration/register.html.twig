@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+{% block body %}
+   {{render(controller('AppBundle:Default:header'))}}
+	<!-- Latest Updates -->
+	<div class="container">
+		<div class="latest-update col-md-2 no-padding">
+			<h3>Latest Updates</h3>
+		</div>
+		<div class="col-md-10 latest-post-list no-padding">
+			<div data-speed="20000" data-direction="left" class='marquee'>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+			</div>
+		</div>
+	</div>
+	
+                                        
+       {% include "FOSUserBundle:Registration:register_content.html.twig" %}
+                                        
+{{render(controller('AppBundle:Default:adds'))}}
+           
+   
+{% endblock body %}

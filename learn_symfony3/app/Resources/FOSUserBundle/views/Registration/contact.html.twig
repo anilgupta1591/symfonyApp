@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+{% block title %} HomePage {%endblock%}
+{% block body %}
+
+	
+	
+	{{render(controller('AppBundle:Default:header'))}}
+	<!-- Latest Updates -->
+	<div class="container">
+		<div class="latest-update col-md-2 no-padding">
+			<h3>Latest Updates</h3>
+		</div>
+		<div class="col-md-10 latest-post-list no-padding">
+			<div data-speed="20000" data-direction="left" class='marquee'>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+				<a href="#">
+					<img src="{{ asset('assets/images/latest-post-marquee.png') }}" alt="latest-post-marquee" /> Travelled down the road and back again</a>
+			</div>
+		</div>
+	</div>
+	<!-- Latest Updates /- -->
+	
+	
+
+        <div class="container">
+            <div class="col-md-2 col-sm-2" > </div>
+            <div id="contact" class="col-md-8 col-sm-8 contact-form">
+				<form action="./contact.php" target="hidden" method="post">
+					<div id="alert-msg" class="alert-msg"></div>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" id="sizing-addon1"><img src="images/icon/user.png" alt="user"></span>
+						<input type="text" class="form-control" id="input_name" name="contact-name" placeholder="YOUR NAME *" aria-describedby="sizing-addon1" required="">
+					</div>
+					<div class="input-group input-group-lg ">
+						<span class="input-group-addon" id="sizing-addon2"><i class="fa fa-envelope"></i></span>
+						<input type="email" class="form-control" id="input_email" name="contact-email" placeholder="YOUR E-MAIL *" aria-describedby="sizing-addon2" required="">
+					</div>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" id="sizing-addon3"><i class="fa fa-phone"></i></span>
+						<input type="tel" class="form-control" id="input_phone" name="contact-phone" placeholder="YOUR NUMBER" aria-describedby="sizing-addon3">
+					</div>
+					<div class="input-group input-group-lg textarea-control">
+						<span class="input-group-addon" id="sizing-addon4"><i class="fa fa-pencil"></i></span>
+						<textarea class="form-control" id="textarea_message" name="contact-message" rows="6" placeholder="MESSAGE"></textarea>
+					</div>
+		
+					<input class="btn btn-default send-message" type="submit" value="SEND MESSAGE">
+				</form>
+			</div>
+        </div>   
+{{render(controller('AppBundle:Default:adds'))}}
+{% endblock%}
