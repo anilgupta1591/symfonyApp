@@ -3,6 +3,7 @@
 use Symfony\Component\HttpFoundation\Request;
 
 require __DIR__.'/../vendor/autoload.php';
+ini_set('max_execution_time', 300);
 if (PHP_VERSION_ID < 70000) {
     include_once __DIR__.'/../var/bootstrap.php.cache';
 }

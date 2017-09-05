@@ -1,37 +1,35 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-<div class="col-md-8 col-sm-8"> </div> 
+<div class="col-md-3 col-sm-3"> </div> 
    <div id="contact" class="col-md-8 col-sm-8 contact-form">
 				{{form_start(form, {'method': 'POST', 'attr':{'class': 'register'}})}}
 					<div id="alert-msg" class="alert-msg"></div>
 					<div class="input-group input-group-lg">
 						
                                             <span class="input-group-addon" id="sizing-addon1"><img src="../assets/images/icon/user.png" alt="user"></span>
-					   {{ form_label(form.username) }}
-                                            {{ form_widget(form.username) }}
-                                          {{ form_errors(form.username) }}
+					  {{ form_widget(form.username) }}
+{#                                          {{ form_errors(form.username) }}#}
                                           
 					</div>
 					<div class="input-group input-group-lg ">
 						<span class="input-group-addon" id="sizing-addon2"><i class="fa fa-envelope"></i></span>
-						{{ form_label(form.email) }}
-                                            {{ form_widget(form.email) }}
-                                          {{ form_errors(form.email) }}
+						{{ form_widget(form.email) }}
+                                                 {{ form_errors(form.email) }}
 					</div>
 					<div class="input-group input-group-lg">
 						<span class="input-group-addon" id="sizing-addon3"><i class="fa fa-phone"></i></span>
-						{{ form_label(form.plainPassword.first) }}
-                                            {{ form_widget(form.plainPassword.first) }}
-                                          {{ form_errors(form.plainPassword.first) }}
+						 {{ form_widget(form.plainPassword.first) }}
+                                                 {{ form_errors(form.plainPassword.first) }}
 					</div>
 					<div class="input-group input-group-lg textarea-control">
 						<span class="input-group-addon" id="sizing-addon4"><i class="fa fa-pencil"></i></span>
-						{{ form_label(form.plainPassword.second) }}
-                                            {{ form_widget(form.plainPassword.second) }}
+						{{ form_widget(form.plainPassword.second) }}
                                           {{ form_errors(form.plainPassword.second) }}
 					</div>
-		 {{ 'registration.submit'|trans }}
-					<input class="btn btn-default send-message" type="submit" value="SEND MESSAGE">
+                                     <div class="input-group input-group-lg textarea-control">
+                                         <span class="input-group-addon" id="sizing-addon4"></span> 
+                                         <input class="btn btn-default send-message" type="submit" value="Register">
+                                         </div>
 				{{ form_end(form) }}
 			</div>
 

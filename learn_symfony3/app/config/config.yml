@@ -77,9 +77,12 @@ fos_user:
         address: "anilgupta.itech@gmail.com"
         sender_name: "Anil" 
     registration:
+        form:
+            type: AppBundle\Form\RegistrationType
         confirmation:
             enabled:    true 
-            template:   Emails\confirmation.html.twig       
+            template:   Emails\confirmation.email.twig
+              
     service:
         mailer:  fos_user.mailer.twig_swift
         
