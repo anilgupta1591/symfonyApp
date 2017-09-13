@@ -9,3 +9,7 @@ contact:
 test:
     path: /test
     defaults: {_controller: AppBundle:Default:mailCheck}
+    
+api_demos:
+    type: rest
+    resource: AppBundle\Controller\DemoController
