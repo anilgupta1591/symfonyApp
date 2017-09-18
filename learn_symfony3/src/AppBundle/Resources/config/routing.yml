@@ -11,5 +11,5 @@ test:
     defaults: {_controller: AppBundle:Default:mailCheck}
     
 api_demos:
-    type: rest
+    type: /rest
     resource: AppBundle\Controller\DemoController

@@ -12,6 +12,6 @@ class DemoController extends FOSRestController
     {
         $data = array("hello" => "world");
         $view = $this->view($data);
-        return $this->handleView($view);
+        return $data;
     }
 }
